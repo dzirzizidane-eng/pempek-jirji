@@ -11,20 +11,27 @@
 html{
 scroll-behavior:smooth;
 }
+
 .hero{
 background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
-background-size:cover;
-background-position:center;
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.65)
+),
+url("image/awal.png");
+
+background-size: cover;
+background-position: center;
+background-repeat:no-repeat;
 }
 </style>
 
 </head>
+
 <body class="bg-orange-50">
 
 <!-- Navbar -->
-<nav class="fixed w-full bg-white shadow z-50">
+<nav class="fixed w-full bg-white shadow-lg z-50">
 <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
 
 <h1 class="text-3xl font-bold text-orange-600">
@@ -39,7 +46,7 @@ Pempek Sultan
 </ul>
 
 <a href="https://wa.me/628123456789"
-class="bg-orange-500 text-white px-5 py-3 rounded-xl">
+class="bg-orange-500 text-white px-5 py-3 rounded-xl hover:bg-orange-600">
 Pesan Sekarang
 </a>
 
@@ -47,19 +54,20 @@ Pesan Sekarang
 </nav>
 
 
-<!-- Hero -->
+
+<!-- HERO -->
 <section id="home"
 class="hero min-h-screen flex items-center text-white">
 
 <div class="max-w-6xl mx-auto px-8">
 
-<h2 class="text-6xl font-bold mb-6">
-Pempek Asli Palembang<br>
-Rasa Sultan Harga Bersahabat
+<h2 class="text-6xl font-bold mb-6 leading-tight">
+Pempek Asli Palembang <br>
+Rasa Legendaris Sejak Generasi
 </h2>
 
 <p class="text-2xl mb-8">
-Fresh dibuat harian • Bisa frozen • Kirim seluruh Indonesia
+Fresh dibuat harian • Cuko khas Palembang • Frozen Pack tersedia
 </p>
 
 <a href="#menu"
@@ -73,29 +81,29 @@ Lihat Menu
 
 
 
-<!-- Keunggulan -->
+<!-- KEUNGGULAN -->
 <section class="py-20 bg-white">
 <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-8">
 
-<div class="bg-orange-100 p-8 rounded-3xl">
+<div class="bg-orange-100 p-8 rounded-3xl shadow">
 <h3 class="text-2xl font-bold mb-3">
-🐟 Ikan Segar
+🐟 Ikan Segar Premium
 </h3>
-<p>Bahan premium kualitas terbaik.</p>
+<p>Bahan pilihan kualitas terbaik.</p>
 </div>
 
-<div class="bg-orange-100 p-8 rounded-3xl">
+<div class="bg-orange-100 p-8 rounded-3xl shadow">
 <h3 class="text-2xl font-bold mb-3">
-🚚 Delivery Cepat
+🚚 Kirim Seluruh Indonesia
 </h3>
-<p>Siap kirim lokal dan luar kota.</p>
+<p>Tersedia pempek frozen.</p>
 </div>
 
-<div class="bg-orange-100 p-8 rounded-3xl">
+<div class="bg-orange-100 p-8 rounded-3xl shadow">
 <h3 class="text-2xl font-bold mb-3">
-🔥 Cuko Khas Palembang
+🔥 Cuko Autentik
 </h3>
-<p>Resep autentik turun-temurun.</p>
+<p>Resep asli khas Palembang.</p>
 </div>
 
 </div>
@@ -103,7 +111,8 @@ Lihat Menu
 
 
 
-<!-- Produk -->
+
+<!-- MENU -->
 <section id="menu" class="py-24">
 
 <h2 class="text-center text-5xl font-bold mb-16">
@@ -112,72 +121,98 @@ Menu Favorit
 
 <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-8">
 
+
+<!-- Produk 1 -->
 <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<img
+src="image/kapalselam.png"
+class="w-full h-72 object-cover">
+
 <div class="p-8">
 <h3 class="text-2xl font-bold">
 Pempek Kapal Selam
 </h3>
-<p class="text-orange-600 text-2xl my-4">
+
+<p class="my-4 text-orange-600 text-2xl">
 Rp30.000
 </p>
-<button class="bg-orange-500 text-white w-full py-3 rounded-xl">
+
+<button class="bg-orange-500 text-white py-3 w-full rounded-xl">
 Pesan
 </button>
+
 </div>
 </div>
 
 
+
+<!-- Produk 2 -->
 <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<img
+src="image/lenjer.png"
+class="w-full h-72 object-cover">
+
 <div class="p-8">
 <h3 class="text-2xl font-bold">
 Pempek Lenjer
 </h3>
-<p class="text-orange-600 text-2xl my-4">
+
+<p class="my-4 text-orange-600 text-2xl">
 Rp25.000
 </p>
-<button class="bg-orange-500 text-white w-full py-3 rounded-xl">
+
+<button class="bg-orange-500 text-white py-3 w-full rounded-xl">
 Pesan
 </button>
+
 </div>
 </div>
 
 
+
+<!-- Produk 3 -->
 <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-<img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+<img
+src="image/frozen.png"
+class="w-full h-72 object-cover">
+
 <div class="p-8">
 <h3 class="text-2xl font-bold">
-Paket Frozen
+Paket Frozen Family
 </h3>
-<p class="text-orange-600 text-2xl my-4">
+
+<p class="my-4 text-orange-600 text-2xl">
 Rp85.000
 </p>
-<button class="bg-orange-500 text-white w-full py-3 rounded-xl">
+
+<button class="bg-orange-500 text-white py-3 w-full rounded-xl">
 Pesan
 </button>
+
 </div>
 </div>
 
-</div>
 
+</div>
 </section>
 
 
 
-<!-- Promo -->
-<section id="promo"
-class="py-24 bg-orange-500 text-white text-center">
+
+<!-- PROMO -->
+<section
+id="promo"
+class="py-24 bg-orange-500 text-center text-white">
 
 <h2 class="text-6xl font-bold mb-6">
 Promo Paket Keluarga
 </h2>
 
 <p class="text-2xl mb-8">
-Beli 3 Gratis 1 + Bonus Cuko
+Beli 3 Gratis 1 + Bonus Cuko Khas
 </p>
 
-<button class="bg-white text-orange-600 px-10 py-4 rounded-2xl">
+<button class="bg-white text-orange-600 px-10 py-4 rounded-2xl font-bold">
 Ambil Promo
 </button>
 
@@ -185,11 +220,12 @@ Ambil Promo
 
 
 
-<!-- Testimoni -->
+
+<!-- TESTIMONI -->
 <section id="testimoni" class="py-24">
 
 <h2 class="text-center text-5xl font-bold mb-16">
-Testimoni Pelanggan
+Apa Kata Pelanggan
 </h2>
 
 <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-8">
@@ -197,29 +233,31 @@ Testimoni Pelanggan
 <div class="bg-white p-8 rounded-3xl shadow">
 ⭐⭐⭐⭐⭐
 <p class="mt-4">
-Pempek asli enak banget, cukonya mantap.
+Pempek asli enak banget, cukonya juara.
 </p>
-<h4 class="mt-4 font-bold">
+<h4 class="mt-5 font-bold">
 - Rina
 </h4>
 </div>
 
-<div class="bg-white p-8 rounded-3xl shadow">
-⭐⭐⭐⭐⭐
-<p class="mt-4">
-Frozen pack praktis dan rasa tetap enak.
-</p>
-<h4 class="mt-4 font-bold">
-- Budi
-</h4>
-</div>
 
 <div class="bg-white p-8 rounded-3xl shadow">
 ⭐⭐⭐⭐⭐
 <p class="mt-4">
-Langganan keluarga setiap minggu.
+Frozen pack praktis, rasa tetap mantap.
 </p>
-<h4 class="mt-4 font-bold">
+<h4 class="mt-5 font-bold">
+- Budi
+</h4>
+</div>
+
+
+<div class="bg-white p-8 rounded-3xl shadow">
+⭐⭐⭐⭐⭐
+<p class="mt-4">
+Langganan keluarga tiap minggu.
+</p>
+<h4 class="mt-5 font-bold">
 - Andi
 </h4>
 </div>
@@ -229,14 +267,16 @@ Langganan keluarga setiap minggu.
 </section>
 
 
+
+
 <!-- CTA -->
-<section class="py-24 text-center bg-orange-100">
+<section class="py-24 bg-orange-100 text-center">
 
 <h2 class="text-5xl font-bold mb-6">
-Pesan Via WhatsApp Sekarang
+Pesan Sekarang via WhatsApp
 </h2>
 
-<a href="https://wa.me/628123456789"
+<a href="https://wa.me/6282211999524"
 class="bg-green-500 text-white px-10 py-5 rounded-2xl text-xl">
 Order Sekarang
 </a>
@@ -245,9 +285,11 @@ Order Sekarang
 
 
 
+<!-- Footer -->
 <footer class="bg-slate-900 text-white text-center p-8">
 © 2026 Pempek Sultan Palembang
 </footer>
+
 
 </body>
 </html>
